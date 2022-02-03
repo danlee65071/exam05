@@ -1,0 +1,63 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+oa-e2.msk.21-school.ru
+Darwin 18.7.0 x86_64
+$> date
+Thu Feb  3 13:15:03 MSK 2022
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.msk.21-school.ru:exam-2022-02-03/hcharlsi_exam-rank-05_exam_12h35m40s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmpHr5HKK/user log --pretty='%H - %an, %ad : %s'
+7b721aab8e78a6167621d8cdad2427fb6bedc4cd - Exam 42, Thu Feb 3 13:14:44 2022 +0300 : 01
+3f7be35345e240812a8936ef9a01dcc960c82c85 - Exam 42, Thu Feb 3 12:46:34 2022 +0300 : 00
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpHr5HKK/user
+total 8
+-rw-r--r--   1 root  wheel  894 Feb  3 13:15 __GIT_HISTORY
+drwxr-xr-x   4 root  wheel  128 Feb  3 13:15 cpp_module_00
+drwxr-xr-x  12 root  wheel  384 Feb  3 13:15 cpp_module_01
+
+/tmp/tmpHr5HKK/user/cpp_module_00:
+total 8
+-rw-r--r--  1 root  wheel    0 Feb  3 13:15 Warlock.cpp
+-rw-r--r--  1 root  wheel  830 Feb  3 13:15 Warlock.hpp
+
+/tmp/tmpHr5HKK/user/cpp_module_01:
+total 56
+-rw-r--r--  1 root  wheel   102 Feb  3 13:15 ASpell.cpp
+-rw-r--r--  1 root  wheel   874 Feb  3 13:15 ASpell.hpp
+-rw-r--r--  1 root  wheel   152 Feb  3 13:15 ATarget.cpp
+-rw-r--r--  1 root  wheel   642 Feb  3 13:15 ATarget.hpp
+-rw-r--r--  1 root  wheel     0 Feb  3 13:15 Dummy.cpp
+-rw-r--r--  1 root  wheel   208 Feb  3 13:15 Dummy.hpp
+-rw-r--r--  1 root  wheel     0 Feb  3 13:15 Fwoosh.cpp
+-rw-r--r--  1 root  wheel   207 Feb  3 13:15 Fwoosh.hpp
+-rw-r--r--  1 root  wheel     0 Feb  3 13:15 Warlock.cpp
+-rw-r--r--  1 root  wheel  1629 Feb  3 13:15 Warlock.hpp
+ 
+= cpp_module_01 ================================================================
+$> g++ -Wextra -Wall -Werror main.cpp Dummy.cpp ASpell.cpp Sheep.cpp Warlock.cpp Fwoosh.cpp ATarget.cpp -o user_exe 
+
+= Test 1 ===================================================
+$> ./d54fe4eosv6ouuuhdhx9quxe
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

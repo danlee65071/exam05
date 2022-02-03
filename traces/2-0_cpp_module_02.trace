@@ -1,0 +1,101 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+mi-p2.msk.21-school.ru
+Darwin 18.7.0 x86_64
+$> date
+Thu Feb  3 13:36:59 MSK 2022
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.msk.21-school.ru:exam-2022-02-03/hcharlsi_exam-rank-05_exam_12h35m40s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmpvxSGmZ/user log --pretty='%H - %an, %ad : %s'
+e9f68fac71a37fb051a52bb5c96c36f782da28aa - Exam 42, Thu Feb 3 13:36:43 2022 +0300 : 02
+7b721aab8e78a6167621d8cdad2427fb6bedc4cd - Exam 42, Thu Feb 3 13:14:44 2022 +0300 : 01
+3f7be35345e240812a8936ef9a01dcc960c82c85 - Exam 42, Thu Feb 3 12:46:34 2022 +0300 : 00
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpvxSGmZ/user
+total 8
+-rw-r--r--   1 root  wheel  2071 Feb  3 13:37 __GIT_HISTORY
+drwxr-xr-x   4 root  wheel   128 Feb  3 13:37 cpp_module_00
+drwxr-xr-x  12 root  wheel   384 Feb  3 13:37 cpp_module_01
+drwxr-xr-x  22 root  wheel   704 Feb  3 13:37 cpp_module_02
+
+/tmp/tmpvxSGmZ/user/cpp_module_00:
+total 8
+-rw-r--r--  1 root  wheel    0 Feb  3 13:37 Warlock.cpp
+-rw-r--r--  1 root  wheel  830 Feb  3 13:37 Warlock.hpp
+
+/tmp/tmpvxSGmZ/user/cpp_module_01:
+total 56
+-rw-r--r--  1 root  wheel   102 Feb  3 13:37 ASpell.cpp
+-rw-r--r--  1 root  wheel   874 Feb  3 13:37 ASpell.hpp
+-rw-r--r--  1 root  wheel   152 Feb  3 13:37 ATarget.cpp
+-rw-r--r--  1 root  wheel   642 Feb  3 13:37 ATarget.hpp
+-rw-r--r--  1 root  wheel     0 Feb  3 13:37 Dummy.cpp
+-rw-r--r--  1 root  wheel   208 Feb  3 13:37 Dummy.hpp
+-rw-r--r--  1 root  wheel     0 Feb  3 13:37 Fwoosh.cpp
+-rw-r--r--  1 root  wheel   207 Feb  3 13:37 Fwoosh.hpp
+-rw-r--r--  1 root  wheel     0 Feb  3 13:37 Warlock.cpp
+-rw-r--r--  1 root  wheel  1629 Feb  3 13:37 Warlock.hpp
+
+/tmp/tmpvxSGmZ/user/cpp_module_02:
+total 96
+-rw-r--r--  1 root  wheel   102 Feb  3 13:37 ASpell.cpp
+-rw-r--r--  1 root  wheel   874 Feb  3 13:37 ASpell.hpp
+-rw-r--r--  1 root  wheel   152 Feb  3 13:37 ATarget.cpp
+-rw-r--r--  1 root  wheel   642 Feb  3 13:37 ATarget.hpp
+-rw-r--r--  1 root  wheel     0 Feb  3 13:37 BrickWall.cpp
+-rw-r--r--  1 root  wheel   235 Feb  3 13:37 BrickWall.hpp
+-rw-r--r--  1 root  wheel     0 Feb  3 13:37 Dummy.cpp
+-rw-r--r--  1 root  wheel   208 Feb  3 13:37 Dummy.hpp
+-rw-r--r--  1 root  wheel     0 Feb  3 13:37 Fireball.cpp
+-rw-r--r--  1 root  wheel   227 Feb  3 13:37 Fireball.hpp
+-rw-r--r--  1 root  wheel     0 Feb  3 13:37 Fwoosh.cpp
+-rw-r--r--  1 root  wheel   207 Feb  3 13:37 Fwoosh.hpp
+-rw-r--r--  1 root  wheel     0 Feb  3 13:37 Polymorph.cpp
+-rw-r--r--  1 root  wheel   238 Feb  3 13:37 Polymorph.hpp
+-rw-r--r--  1 root  wheel     0 Feb  3 13:37 SpellBook.cpp
+-rw-r--r--  1 root  wheel   990 Feb  3 13:37 SpellBook.hpp
+-rw-r--r--  1 root  wheel     0 Feb  3 13:37 TargetGenerator.cpp
+-rw-r--r--  1 root  wheel  1024 Feb  3 13:37 TargetGenerator.hpp
+-rw-r--r--  1 root  wheel     0 Feb  3 13:37 Warlock.cpp
+-rw-r--r--  1 root  wheel  1374 Feb  3 13:37 Warlock.hpp
+ 
+= cpp_module_02 ================================================================
+$> g++ -Wextra -Wall -Werror main.cpp Warlock.cpp Fireball.cpp Dummy.cpp ASpell.cpp ATarget.cpp SpellBook.cpp Polymorph.cpp BrickWall.cpp TargetGenerator.cpp Fwoosh.cpp TestSubject.cpp Sheep.cpp -o user_exe 
+
+$> g++ -Wextra -Wall -Werror main.cpp Warlock.cpp Fireball.cpp Dummy.cpp ASpell.cpp ATarget.cpp SpellBook.cpp Polymorph.cpp BrickWall.cpp TargetGenerator.cpp Fwoosh.cpp TestSubject.cpp Sheep.cpp -o ref_exe 
+
+= Test 1 ===================================================
+$> ./1g6ifr2guen74o35rvvz9usv
+$> ./1g6ifr2guen74o35rvvz9usv
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2022-02-03 10:37:15.000000000 +0000$
++++ test1.output	2022-02-03 10:37:16.000000000 +0000$
+@@ -16,6 +16,7 @@$
+ Inconspicuous Red-brick Wall has been turned into a critter!$
+ Target Practice Dummy has been turned into a fuzzy sheep!$
+ Inconscious Test Subject has been turned into a critter!$
++Inconspicuous Red-brick Wall has been fwooshed!$
+ Inconspicuous Red-brick Wall has been turned into a critter!$
+ Inconspicuous Red-brick Wall has been turned into a fuzzy sheep!$
+ Richard: My job here is done!$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

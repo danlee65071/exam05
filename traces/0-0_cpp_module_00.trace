@@ -1,0 +1,48 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+vo-l6.msk.21-school.ru
+Darwin 18.7.0 x86_64
+$> date
+Thu Feb  3 12:49:17 MSK 2022
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.msk.21-school.ru:exam-2022-02-03/hcharlsi_exam-rank-05_exam_12h35m40s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmprALZiG/user log --pretty='%H - %an, %ad : %s'
+3f7be35345e240812a8936ef9a01dcc960c82c85 - Exam 42, Thu Feb 3 12:46:34 2022 +0300 : 00
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmprALZiG/user
+total 8
+-rw-r--r--  1 root  wheel  265 Feb  3 12:49 __GIT_HISTORY
+drwxr-xr-x  4 root  wheel  128 Feb  3 12:49 cpp_module_00
+
+/tmp/tmprALZiG/user/cpp_module_00:
+total 8
+-rw-r--r--  1 root  wheel    0 Feb  3 12:49 Warlock.cpp
+-rw-r--r--  1 root  wheel  830 Feb  3 12:49 Warlock.hpp
+ 
+= cpp_module_00 ================================================================
+$> g++ -Wextra -Wall -Werror Warlock.cpp main.cpp -o user_exe 
+
+= Test 1 ===================================================
+$> ./p2c65vquuhjo2b8bo0h1atb1
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
